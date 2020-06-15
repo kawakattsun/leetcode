@@ -6,6 +6,20 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
+func (t *TreeNode) Insert(val int) {
+	if t.Val == 0 {
+		t.Val = val
+		t.Left = new(TreeNode)
+		t.Right = new(TreeNode)
+		return
+	}
+	if t.Val > val {
+		t.Left.Insert(val)
+	} else {
+		t.Right.Insert(val)
+	}
+}
+
 /**
  * Definition for a binary tree node.
  * type TreeNode struct {
