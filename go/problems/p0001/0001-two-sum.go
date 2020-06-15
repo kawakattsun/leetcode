@@ -1,4 +1,4 @@
-package p0001twosum
+package p0001
 
 func twoSum(nums []int, target int) []int {
 	indexies := make(map[int]int, len(nums))

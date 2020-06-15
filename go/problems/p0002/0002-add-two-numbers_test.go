@@ -1,4 +1,4 @@
-package p0002addtwonumbers
+package p0002
 
 import (
 	"reflect"
